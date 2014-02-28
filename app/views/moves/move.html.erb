@@ -1,0 +1,7 @@
+<h1> Welcome to the Rock Paper Scissors game <h1>
+
+	<%@moves.each do |move| %>
+		<%= move.rock %>
+		<%= move.paper %>
+		<%= move.scissors %>
+	<%= link_to "Show", move_path(move.id) %>
